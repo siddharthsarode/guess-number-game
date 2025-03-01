@@ -15,7 +15,7 @@ const Game = () => {
   const [showResult, setShowResult] = useState(false);
   const [gameStatus, setGameStatus] = useState("idle");
 
-  // console.log(targetNumber);
+  console.log(targetNumber);
 
   // Set the total winners count to localstorage
   useEffect(() => {
@@ -26,7 +26,7 @@ const Game = () => {
   }, []);
 
   const generateNumber = () => {
-    return Math.floor(Math.random() * 20) + 1;
+    return Math.floor(Math.random() * 10) + 1;
   };
 
   const startGame = () => {
@@ -163,7 +163,7 @@ const Game = () => {
         )}
 
         <div className="grid grid-cols-5 md:grid-cols-10 gap-2 mb-6">
-          {Array.from({ length: 20 }, (_, i) => i + 1).map((number) => (
+          {Array.from({ length: 10 }, (_, i) => i + 1).map((number) => (
             <Button
               key={number}
               onClick={() => handleNumberClick(number)}
