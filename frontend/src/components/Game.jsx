@@ -15,7 +15,7 @@ const Game = () => {
   const [showResult, setShowResult] = useState(false);
   const [gameStatus, setGameStatus] = useState("idle");
 
-  console.log(targetNumber);
+  // console.log(targetNumber);
 
   // Set the total winners count to localstorage
   useEffect(() => {
@@ -115,7 +115,7 @@ const Game = () => {
     <div className="min-h-screen bg-gray-950 p-4 flex flex-col items-center justify-center">
       <Card className="w-full max-w-3xl p-6 bg-gray-900 border-gray-800">
         <h1 className="text-2xl md:text-4xl font-bold text-center mb-6 text-white uppercase">
-          Guess the number between 1 to 20 and Get{" "}
+          Guess the number between 1 to 10 and Get{" "}
           <span className="text-yellow-600">Free</span> Panipuri
         </h1>
 
